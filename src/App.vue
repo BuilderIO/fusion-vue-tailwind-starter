@@ -1,47 +1,38 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200"
+  >
+    <div class="text-center">
+      <!-- TODO: replace everything here with the actual app! -->
+      <h1 class="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
+        <svg class="animate-spin h-8 w-8 text-slate-400" viewBox="0 0 50 50">
+          <circle
+            class="opacity-30"
+            cx="25"
+            cy="25"
+            r="20"
+            stroke="currentColor"
+            stroke-width="5"
+            fill="none"
+          />
+          <circle
+            class="text-slate-600"
+            cx="25"
+            cy="25"
+            r="20"
+            stroke="currentColor"
+            stroke-width="5"
+            fill="none"
+            stroke-dasharray="100"
+            stroke-dashoffset="75"
+          />
+        </svg>
+        Generating your app...
+      </h1>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>
